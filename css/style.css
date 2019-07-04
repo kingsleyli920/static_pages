@@ -1,7 +1,80 @@
+
+body {
+    background:  rgb(4, 11, 36) url(../img/body_bg.png) no-repeat center;
+    margin: 0;
+    padding: 0;
+}
+
+.text_blue {
+    color: rgb(138, 204, 245);
+}
 .text_yellow {
     color:rgba(244, 233, 91, 1);
 }
 
 .text_gray {
     color: gray;
+}
+
+.display_img {
+    display: block;
+}
+
+.bg-section {
+    background-color: rgba(22, 41, 76, .7);
+}
+/*电脑*/
+.title_text {
+    font-size: 2em;
+    background: rgb(4, 11, 36) url(../img/title_bg.png) no-repeat center;
+}
+
+/*电脑*/
+.subtitle_text {
+    font-size: 1.5em;
+}
+
+.content_text {
+    font-size: 1.2em;
+}
+
+.media-bg {
+    background: url(../img/subtitle.png) no-repeat left;
+}
+
+/*手机*/
+@media only screen and (min-width:0px) and (max-width:768px)
+{
+    .text_blue {
+        color: rgb(138, 204, 245);
+    }
+
+    .title_text {
+        font-size: 1em;
+    }
+
+    .display_img {
+        display: none;
+    }
+
+    .subtitle_text {
+        font-size: 1em;
+    }
+}
+
+/*平板*/
+@media only screen and (min-width:768px) and (max-width:992px)
+{
+    .text_blue {
+        color: rgb(138, 204, 245);
+    }
+
+    .title_text {
+        font-size: 1em;
+    }
+
+    .subtitle_text {
+        font-size: 1.5em;
+        
+    }
 }
