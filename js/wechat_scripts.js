@@ -51,7 +51,6 @@ var myPieChart1 = new Chart(ctx_pie1, {
     },
     options: {
         cutoutPercentage: 40,
-        responsive: false,
     }
 });
 

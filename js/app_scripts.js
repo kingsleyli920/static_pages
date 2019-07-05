@@ -7,41 +7,39 @@ var myBarChart = new Chart(ctx_bar, {
             data: [1500, 2000, 2500, 3000, 3000, 3500, 4000],
             label: '七日下载数据',
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
             ],
             borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(255,99,132,1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
+                'rgba(240, 227, 90, 1)',
             ],
             borderWidth: 1
         }]
     },
     options: {
-        responsive: false,
         scales: {
-            xAxes: [{
-                ticks: {
-                    maxRotation: 90,
-                    minRotation: 80
-                }
-            }],
             yAxes: [{
                 ticks: {
                     beginAtZero: true
+                },
+                gridLines: {
+                    display: true,
+                    color: "rgba(111, 122, 146, 1)"
                 }
             }]
-        }
+        },
+        maintainAspectRatio: false
     }
 });
 
@@ -49,22 +47,22 @@ var ctx_pie = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx_pie, {
     type: 'pie',
     data: {
-        labels: ['Android', 'IOS'],
+        labels: ['IOS', 'Android'],
         datasets: [{
-            data: [35, 65],
+            data: [65, 35],
             backgroundColor: [
-                'rgba(239, 227, 89, 0.5)',
-                'rgba(108, 134, 239, 0.2)',
+                'rgba(108, 134, 239, 1)',
+                'rgba(239, 227, 89, 1)',
             ],
             borderColor: [
-                'rgba(239,227,89,0.5)',
-                'rgba(108, 134, 239, 0.2)',
+                'rgba(108, 134, 239, 1)',
+                'rgba(239,227,89,1)',
             ],
             borderWidth: 1,
         }]
     },
     options: {
-        responsive: false,
+        maintainAspectRatio: false
     }
 });
 
@@ -76,30 +74,22 @@ var myLineChart = new Chart(ctx_line, {
         datasets: [{
             label: '安装总量',
             data: [1900, 2100, 2000, 2400, 2600, 3000, 3200, 3600, 3900],
-            backgroundColor: [
-                'rgba(242, 229, 93, 0.2)'
-            ],
             borderColor: [
-                'rgba(242, 229, 93, 0.2)'
+                'rgba(242, 229, 93, 1)'
             ]
         }, {
             label: '月活跃用户',
             data: [600, 1000, 1100, 1150, 1300, 1550, 1800, 1900, 2100],
-            backgroundColor: [
-                'rgba(128, 200, 241, 0.2)'
-            ],
+
             borderColor: [
-                'rgba(128, 200, 241, 0.2)'
+                'rgba(128, 200, 241,1)'
             ]
         },
         {
             label: '日活跃用户',
             data: [900, 570, 600, 700, 800, 850, 980, 999, 1120],
-            backgroundColor: [
-                'rgba(211, 73, 171, 0.2)'
-            ],
             borderColor: [
-                'rgba(211, 73, 171, 0.2)'
+                'rgba(211, 73, 171, 1)'
             ]
         }]
     },
@@ -110,6 +100,7 @@ var myLineChart = new Chart(ctx_line, {
                     beginAtZero: true
                 }
             }]
-        }
+        },
+        maintainAspectRatio: false
     }
 });

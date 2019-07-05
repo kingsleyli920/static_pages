@@ -2,7 +2,7 @@
 body {
     background:  rgb(4, 11, 36) url(../img/body_bg.png) no-repeat center;
     margin: 0;
-    padding: 0;
+    padding: 2%;
 }
 
 .text_blue {
