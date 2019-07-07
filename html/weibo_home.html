@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>数据大屏</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mb-3 p-0">
+            <div class="col-12 p-0">
+                <nav class="navbar navbar-light justify-content-center">
+                    <div class="navbar-nav d-flex justify-content-center flex-row m-0">
+                        <li class="nav-item m-auto p-0">
+                            <span class="navbar-brand p-0 w-100">
+                                <img src="../img/title_left.png" class="img-fluid display_img" />
+                            </span>
+                        </li>
+                        <li class="nav-item m-auto p-0">
+                            <span class="navbar-brand p-0 w-100">
+                                <p class="title_text text_blue w-100" style="text-align: center">六盘水微博数据大屏</p>
+                            </span>
+                        </li>
+                        <li class="nav-item m-auto p-0">
+                            <span class="navbar-brand p-0 w-100">
+                                <img src="../img/title_right.png" class="img-fluid display_img" />
+                            </span>
+                        </li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12 col-lg-4">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="card rounded bg-section">
+                            <div class="card-header text_blue subtitle_text">
+                                最热微信展示
+                            </div>
+                            <div class="card-body">
+                                <div class="media mb-5">
+                                    <img src="http://s9.sinaimg.cn/middle/59fc42eftae00f95e5c68&690" class="mr-3" alt="..." width="80" height="80">
+                                    <div class="media-body">
+                                        <p class="mt-0 text_blue subtitle_text">小竹荪撑起致富伞</p>
+                                        <h5 class="text_gray">
+                                            6月10号 12:01
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="media">
+                                            <div class="media-body" style="text-align: center">
+                                                <h3 class="mt-0 text_yellow">23400</h3>
+                                                <h6 class="text_gray">阅读量</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="media">
+                                            <div class="media-body" style="text-align: center">
+                                                <h3 class="mt-0 text_yellow">23400</h3>
+                                                <h6 class="text_gray">阅读量</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="media">
+                                            <div class="media-body" style="text-align: center">
+                                                <h3 class="mt-0 text_yellow">23400</h3>
+                                                <h6 class="text_gray">阅读量</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="card rounded bg-section">
+                            <div class="card-header text_blue subtitle_text">
+                                热字区块展示
+                            </div>
+                            <div id="bubble-canvas" class="card-body m-0 p-0">
+                                <div class="row m-0 p-0">
+                                    <div class="col-12 m-0 p-0">
+                                        <canvas id="myBubbles" width="400" height="400">
+                                            Your browser does not support the HTML5 canvas tag.
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="row mb-3">
+                    <div class="col-4 media-bg">
+                        <div class="media">
+                            <div class="media-body">
+                                <h6 class="mt-0 text_blue ml-2 pt-3">发文总量</h6>
+                                <h3 class="text_yellow pl-3 pt-1">21030</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 media-bg">
+                        <div class="media">
+                            <div class="media-body">
+                                <h6 class="mt-0 text_blue ml-2 pt-3">阅读量</h6>
+                                <h3 class="text_yellow pl-3 pt-1">21030</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 media-bg">
+                        <div class="media">
+                            <div class="media-body">
+                                <h6 class="mt-0 text_blue ml-2 pt-3">点赞量</h6>
+                                <h3 class="text_yellow pl-3 pt-1">21030</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="card rounded bg-section">
+                            <div class="card-header text_blue subtitle_text">
+                                <span class="float-left">微博传播途径</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row m-0 p-0">
+                                    <div class="col-12 m-0 p-0">
+                                        <canvas id="myPieChart1" height="300" width="500"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 ">
+                        <div class="card rounded bg-section">
+                            <div class="card-header text_blue subtitle_text">
+                                <span class="float-left">微博7日趋势</span>
+                                <span class="float-right text_yellow">06.12 - 06.18</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row m-0 p-0">
+                                    <div class="col-12 m-0 p-0">
+                                        <canvas id="myLineChart" height="300" width="500" class="bg-section"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="card rounded text-white bg-section">
+                    <div class="card-header text_blue">
+                        <p class="subtitle_text text_blue w-100" style="text-align: left;">
+                            微博影响力排行榜
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent">
+                                <div class="d-flex w-100 justify-content-start">
+                                    <p class="mr-2 content_text">1.</p>
+                                    <p class="content_text">我市首台全自动登记商事办照一站式服务</p>
+                                </div>
+                                <div class="ml-4">
+                                    <h5 class="text_gray mb-5">6月10号 下午12:01</h5>
+                                </div>
+
+                                <div class="ml-4">
+                                    <span class="text_gray content_text">阅读量：</span>
+                                    <span class="text_yellow content_text">1020</span>
+                                    <span class="text_gray content_text">转发数：</span>
+                                    <span class="text_yellow content_text">1万+</span>
+                                    <span class="text_gray content_text">评论数：</span>
+                                    <span class="text_yellow content_text">10万+</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item bg-transparent">
+                                <div class="d-flex w-100 justify-content-start">
+                                    <p class="mr-2 content_text">1.</p>
+                                    <p class="content_text">我市首台全自动登记商事办照一站式服务</p>
+                                </div>
+                                <div class="ml-4">
+                                    <h5 class="text_gray mb-5">6月10号 下午12:01</h5>
+                                </div>
+
+                                <div class="ml-4">
+                                    <span class="text_gray content_text">阅读量：</span>
+                                    <span class="text_yellow content_text">1020</span>
+                                    <span class="text_gray content_text">转发数：</span>
+                                    <span class="text_yellow content_text">1万+</span>
+                                    <span class="text_gray content_text">评论数：</span>
+                                    <span class="text_yellow content_text">10万+</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item bg-transparent">
+                                <div class="d-flex w-100 justify-content-start">
+                                    <p class="mr-2 content_text">1.</p>
+                                    <p class="content_text">我市首台全自动登记商事办照一站式服务</p>
+                                </div>
+                                <div class="ml-4">
+                                    <h5 class="text_gray mb-5">6月10号 下午12:01</h5>
+                                </div>
+
+                                <div class="ml-4">
+                                    <span class="text_gray content_text">阅读量：</span>
+                                    <span class="text_yellow content_text">1020</span>
+                                    <span class="text_gray content_text">转发数：</span>
+                                    <span class="text_yellow content_text">1万+</span>
+                                    <span class="text_gray content_text">评论数：</span>
+                                    <span class="text_yellow content_text">10万+</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../node_modules/chart.js/dist/Chart.bundle.js"></script>
+    <script src="../js/wechat_scripts.js"></script>
+    <script src="../js/create_random_circle.js"></script>
+    <script>
+
+        let p = new RandomCircle
+            ({
+                id: 'myBubbles',
+                total: 7,
+                minRadius:55,
+                fillingText: ['高考', '脱贫', '旅游十佳城市', '诗词才女', '某地地震', '应急安全演练', '旅游十佳城市']
+            })
+        p.init()
+
+    </script>
+</body>
+
+</html>

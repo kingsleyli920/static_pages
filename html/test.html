@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script src="../js/create_random_circle.js"></script> 
+<script>
+
+
+let p = new RandomCircle({id: 'myCanvas', total: 20})
+p.init()
+
+console.log(p.circleArray)
+</script>
+</body>
+</html>
