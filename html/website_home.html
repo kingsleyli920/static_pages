@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>数据大屏</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mb-3 p-0">
+            <div class="col-12 p-0">
+                <nav class="navbar navbar-light justify-content-center">
+                    <div class="navbar-nav d-flex justify-content-center flex-row m-0">
+                        <li class="nav-item m-auto p-0">
+                            <span class="navbar-brand p-0 w-100">
+                                <img src="../img/title_left.png" class="img-fluid display_img" />
+                            </span>
+                        </li>
+                        <li class="nav-item m-auto p-0">
+                            <span class="navbar-brand p-0 w-100">
+                                <p class="title_text text_blue w-100" style="text-align: center">六盘水日报官网数据大屏</p>
+                            </span>
+                        </li>
+                        <li class="nav-item m-auto p-0">
+                            <span class="navbar-brand p-0 w-100">
+                                <img src="../img/title_right.png" class="img-fluid display_img" />
+                            </span>
+                        </li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12 col-lg-6">
+                <div class="row mb-3">
+                    <div class="col-12 col-md-10 m-0 p-0">
+                        <div class="card bg-section rounded">
+                            <div class="card-body">
+                                <div class="row m-0 p-0">
+                                    <div class="col-12 m-0 p-0">
+                                        <canvas id="myLineChart" width="658.5" height="261px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 m-0">
+                        <div class="row mb-2">
+                            <div class="col-12 media-bg">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h6 class="text_blue mt-3 ml-1">月活跃数</h6>
+                                        <h3 class="text_yellow mt-3 ml-3">21030</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-12 media-bg">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h6 class="text_blue mt-3 ml-1">日活跃数</h6>
+                                        <h3 class="text_yellow mt-3 ml-3">21030</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-12 media-bg">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h6 class="text_blue mt-3 ml-1">新增用户数</h6>
+                                        <h3 class="text_yellow mt-3 ml-3">21030</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-4 p-0 m-0">
+                        <div class="card bg-section rounded p-0 m-0">
+                            <div class="card-header text_blue subtitle_text">
+                                转载媒体
+                            </div>
+                            <div class="card-body p-0 m-0">
+                                <table class="table text-white p-0 m-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">转载媒体</th>
+                                            <th scope="col">转载次数</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>人民网</td>
+                                            <td>12097</td>
+                                        </tr>
+                                        <tr>
+                                            <td>路透社</td>
+                                            <td>9840</td>
+                                        </tr>
+                                        <tr>
+                                            <td>新华社</td>
+                                            <td>6619</td>
+                                        </tr>
+                                        <tr>
+                                            <td>北京晚报</td>
+                                            <td>11194</td>
+                                        </tr>
+                                        <tr>
+                                            <td>北京日报</td>
+                                            <td>4012</td>
+                                        </tr>
+                                        <tr>
+                                            <td>信报</td>
+                                            <td>3897</td>
+                                        </tr>
+                                        <tr>
+                                            <td>信报</td>
+                                            <td>3897</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="card rounded bg-section">
+                            <div class="card-header text_blue subtitle_text">
+                                热字区块展示
+                            </div>
+                            <div id="bubble-canvas" class="card-body m-0 p-0">
+                                <div class="row m-0 p-0">
+                                    <div class="col-12 m-0 p-0">
+                                        <canvas class="w-100" id="myBubbles" width="400" height="300">
+                                            Your browser does not support the HTML5 canvas tag.
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row text-white">
+                    <div class="col-12 col-lg-12 m-0 p-0">
+                        <div class="card bg-section rounded">
+                            <div class="card-header text_blue subtitle_text">
+                                热门新闻排行
+                            </div>
+                            <div class="card-body">
+                                <div class="row m-0 p-0">
+                                    <div class="col-12 col-lg-6 m-0 p-0">
+                                        <ul class="list-unstyled">
+                                            <li class="media">
+                                                <div class="media-body">
+                                                    <h4 class="mt-0 mb-1">教育</h4>
+                                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                        ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                                                        viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                        Donec lacinia congue felis in faucibus.</p>
+                                                </div>
+                                            </li>
+                                            <li class="media my-4">
+                                                <div class="media-body">
+                                                    <h4 class="mt-0 mb-1">房产</h4>
+                                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                        ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                                                        viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                        Donec lacinia congue felis in faucibus.</p>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <div class="media-body">
+                                                    <h4 class="mt-0 mb-1">健康</h4>
+                                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                        ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                                                        viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                        Donec lacinia congue felis in faucibus.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-lg-6 m-0 p-0">
+                                        <ul class="list-unstyled">
+                                            <li class="media">
+                                                <div class="media-body">
+                                                    <h4 class="mt-0 mb-1">旅游</h4>
+                                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                        ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                                                        viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                        Donec lacinia congue felis in faucibus.</p>
+                                                </div>
+                                            </li>
+                                            <li class="media my-4">
+                                                <div class="media-body">
+                                                    <h4 class="mt-0 mb-1">汽车</h4>
+                                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                        ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                                                        viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                        Donec lacinia congue felis in faucibus.</p>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <div class="media-body">
+                                                    <h4 class="mt-0 mb-1">理财</h4>
+                                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                        ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                                                        viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                        Donec lacinia congue felis in faucibus.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../node_modules/chart.js/dist/Chart.bundle.js"></script>
+    <script src="../js/website_scripts.js"></script>
+    <script src="../js/create_random_circle.js"></script>
+    <script>
+
+        let p = new RandomCircle
+            ({
+                id: 'myBubbles',
+                total: 7,
+                minRadius: 45,
+                fillingText: ['高考', '脱贫', '旅游十佳城市', '诗词才女', '某地地震', '应急安全演练', '旅游十佳城市']
+            })
+        p.init()
+
+    </script>
+</body>
+
+</html>

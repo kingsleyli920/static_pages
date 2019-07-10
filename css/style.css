@@ -41,7 +41,6 @@ body {
 .media-bg {
     background: url(../img/subtitle.png) no-repeat left;
 }
-
 /*手机*/
 @media only screen and (min-width:0px) and (max-width:768px)
 {
