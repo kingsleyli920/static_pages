@@ -32,6 +32,10 @@ body {
     color: white;
 }
 
+.font-lightgray {
+    color: gray;
+}
+
 .bg-3-gray {
     background-color: rgba(144, 144, 144, .3)
 }
@@ -75,12 +79,35 @@ body {
     margin-top: 77px;
 }
 
-.content {
+.content-col {
     display: flex;
     flex-direction: column;
     margin: 0 79px;
 }
 
+.content-row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 79px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 /* App 主页css*/
 .upper { 
@@ -206,3 +233,83 @@ body {
 }
 
 /*微信主页css*/
+
+.block-507-840 {
+    width: 507px;
+    height: 840px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 507px 840px;
+} 
+
+.pos-fixed-84-171 {
+    display: fixed;
+    left: 84px;
+    top: 171px;
+}
+
+.news {
+    width: 85%;
+    margin: 0 5%;
+}
+
+.block-695-100 {
+    width: 695px;
+    height: 100px;
+} 
+
+.pos-fixed-84-171 {
+    display: fixed;
+    left: 619px;
+    top: 171px;
+}
+
+.block-683-316 {
+    width: 683px;
+    height: 316px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 683px 316px;
+} 
+
+.pos-fixed-620-296 {
+    display: fixed;
+    left: 620px;
+    top: 296px;
+}
+.block-683-394 {
+    width: 683px;
+    height: 394px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 683px 394px;
+}
+
+.pos-fixed-620-634 {
+    display: fixed;
+    left: 620px;
+    top: 634px;
+}
+
+.block-507-317 {
+    width: 507px;
+    height: 317px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 507px 317px;
+}
+
+.pos-fixed-1330-172 {
+    display: fixed;
+    left: 1330px;
+    top: 172px;
+}
+
+.block-507-507 {
+    width: 507px;
+    height: 507px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 507px 507px;
+}
+
+.pos-fixed-1330-519 {
+    display: fixed;
+    left: 1330px;
+    top: 519px;
+}
