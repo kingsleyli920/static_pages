@@ -1,0 +1,26 @@
+{
+  "name": "case1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingsleyli920/industrial_projects_case1.git"
+  },
+  "keywords": [
+    "web",
+    "pages"
+  ],
+  "author": "Kuncheng Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingsleyli920/industrial_projects_case1/issues"
+  },
+  "homepage": "https://github.com/kingsleyli920/industrial_projects_case1#readme",
+  "dependencies": {
+    "chart.js": "^2.8.0"
+  }
+}

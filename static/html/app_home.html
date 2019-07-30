@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../node_modules/fontawesome-free-5.10.0-web/css/all.css">
+    <title>数据大屏</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-imgs">
+                <div class="left-img">
+                    <img src="../img/title_left.png" />
+                </div>
+                <div class="title title-font">六盘水App数据大屏</div>
+                <div class="right-img">
+                    <img src="../img/title_right.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="upper">
+                <div class="block-683-348 pos-fixed-79-198 " style="margin-right: 24px;">
+                    <div class="block-header">
+                        <h3 class="font-blue ">七日下载数据</h3>
+                        <h4 class="font-yellow">06.12-06.18</h4>
+                    </div>
+                    <div class="block-chart">
+                        <canvas id="myBarChart" width="513px" height="261px">
+                    </div>
+                </div>
+
+                <div class="block-878-324 pos-fixed-786-191 ">
+                    <div class="block-chart">
+                        <canvas id="myLineChart" width="700px" height="250px">
+                    </div>
+                </div>
+
+                <div class=" block-175-324">
+                    <div class="sign font-blue">
+                        <div class="sign-title">
+                            <img src="../img/subtitle.png" />
+                            <p>月活跃数</p>
+                            <b class="font-yellow">7012</b>
+                        </div>
+                        <div class="sign-title">
+                            <img src="../img/subtitle.png" />
+                            <p>日活跃数</p>
+                            <b class="font-yellow">3098</b>
+                        </div>
+                        <div class="sign-title">
+                            <img src="../img/subtitle.png" />
+                            <p>新增用户数</p>
+                            <b class="font-yellow">1982</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="block-683-448 pos-fixed-79-579 " style="margin-top: 40px;">
+                    <div class="block-header">
+                        <h3 class="font-blue ">安装客户端比例</h3>
+                    </div>
+                    <div class="block-chart">
+                        <div class="text-block">
+                            <p>
+                                <h4 class="font-yellow">用户数</h4>
+                                <h2 class="font-yellow">1500</h2>
+                            </p>
+                            <p>
+                                <h4 class="font-yellow">Android</h4>
+                                <h2 class="font-yellow">35%</h2>
+                            </p>
+                        </div>
+                        <div>
+                            <canvas id="myPieChart" width="513px" height="261px" />
+                        </div>
+                        <div class="text-block">
+                            <p>
+                                <h4 class="font-blue">用户数</h4>
+                                <h2 class="font-blue">2785</h2>
+                            </p>
+                            <p>
+                                <h4 class="font-blue">IOS</h4>
+                                <h2 class="font-blue">65%</h2>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="block-1045-489 pos-fixed-794-537">
+                    <div class="block-header">
+                        <h3 class="font-blue ">用户来源</h3>
+                    </div>
+                    <div>
+                        <table class="table font-white" cellspacing="20px">
+                            <thead>
+                                <tr>
+                                    <th>获客渠道</th>
+                                    <th>吸引人数</th>
+                                    <th>综合评分</th>
+                                </tr>
+                            </thead>
+                            <tbody style="text-align: center">
+                                <tr>
+                                    <td>微信公众号</td>
+                                    <td>12097</td>
+                                    <td class="font-yellow">
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>微博</td>
+                                    <td>9840</td>
+                                    <td class="font-yellow">
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>华为应用商店</td>
+                                    <td>6619</td>
+                                    <td class="font-yellow">
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>App Store</td>
+                                    <td>11194</td>
+                                    <td class="font-yellow">
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>豌豆荚</td>
+                                    <td>4012</td>
+                                    <td class="font-yellow">
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>小米应用商店</td>
+                                    <td>3897</td>
+                                    <td class="font-yellow">
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../node_modules/chart.js/dist/Chart.bundle.js"></script>
+<script src="../js/app_scripts.js"></script>
+
+</html>
