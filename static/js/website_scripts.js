@@ -19,6 +19,7 @@ var myLineChart = new Chart(ctx_line, {
                 }
             }]
         },
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        responsive: false
     }
 });

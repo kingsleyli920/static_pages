@@ -313,3 +313,88 @@ body {
     left: 1330px;
     top: 519px;
 }
+
+/*微博主页*/
+
+.pos-fixed-84-519 {
+    display: fixed;
+    left: 84px;
+    top: 519px;
+}
+
+.pos-fixed-620-709 {
+    display: fixed;
+    left: 620px;
+    top: 709px;
+}
+
+.pos-fixed-620-172 {
+    display: fixed;
+    left: 620px;
+    top: 172px;
+}
+
+.block-683-98 {
+    width: 683px;
+    height: 98px;
+}
+
+.block-507-854 {
+    width: 507px;
+    height: 854px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 507px 854px;
+}
+
+/*网站*/
+.block-645-327 {
+    width: 645px;
+    height: 327px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 645px 327px;
+}
+
+.pos-fixed-773-170 {
+    display: fixed;
+    left: 773px;
+    top: 170px;
+}
+
+.block-267-500{
+    width: 267px;
+    height: 500px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 267px 500px;
+}
+
+.pos-fixed-87-525 {
+    display: fixed;
+    left: 87px;
+    top: 525px;
+}
+
+.block-560-500 {
+    width: 560px;
+    height: 500px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 560px 500px;
+} 
+
+.pos-fixed-377-525 {
+    display: fixed;
+    left: 377px;
+    top: 525px;
+}
+
+.block-871-860 {
+    width: 871px;
+    height: 860px;
+    background: url("../img/section_bg.png") no-repeat;
+    background-size: 871px 860px;
+}
+
+.pos-fixed-977-165 {
+    display: fixed;
+    left: 977px;
+    top: 165px;
+}
